@@ -1,34 +1,22 @@
-﻿Domain-Driven Design (DDD) Microservice in ASP.NET Core 8
-Overview
-This project is a DDD-based Microservice implemented in ASP.NET Core 8, using Entity Framework Core (In-Memory Database). It follows a clean architecture approach with separate Core, Application, Infrastructure, and API layers.
+﻿# Domain-Driven Design (DDD) Microservice in ASP.NET Core 8
 
-Project Structure
-DDDExample
-├── Core
-│   ├── Domain
-│   │   ├── Entities (Order, OrderItem)
-│   │   └── Interfaces (IOrderRepository)
-│   ├── Application
-│   │   ├── DTOs (OrderDTO, OrderItemDTO)
-│   │   ├── UseCases (CreateOrderUseCase)
-├── Infrastructure
-│   ├── Persistence
-│   │   ├── AppDbContext (EF Core)
-│   │   ├── OrderRepository
-├── API
-│   ├── Controllers (OrderController)
-│   ├── Program.cs
-│   ├── appsettings.json
+## 📌 Overview
+This project is a **DDD-based Microservice** built with **ASP.NET Core 8**. It follows **Clean Architecture**, using **Entity Framework Core (In-Memory DB)** and **RESTful API principles**.
 
-Technologies Used
-ASP.NET Core 8
-Entity Framework Core 8 (In-Memory)
-Domain-Driven Design (DDD) Principles
-Dependency Injection
-Swagger for API Documentation
+## 🏗️ Project Structure
+DDDExample ├── Core │ ├── Domain │ │ ├── Entities (Order, OrderItem) │ │ ├── Interfaces (IOrderRepository) │ ├── Application │ │ ├── DTOs (OrderDTO, OrderItemDTO) │ │ ├── UseCases (CreateOrderUseCase) ├── Infrastructure │ ├── Persistence │ │ ├── AppDbContext (EF Core) │ │ ├── OrderRepository ├── API │ ├── Controllers (OrderController) │ ├── Program.cs │ ├── appsettings.json
 
-Project Details
-Core Layer: Contains domain entities (Order, OrderItem) and the repository interface.
-Application Layer: Includes DTOs and Use Cases (CreateOrderUseCase).
-Infrastructure Layer: Implements EF Core (In-Memory DB) and repository.
-API Layer: Exposes RESTful endpoints through OrderController.
+## 🚀 Technologies Used
+- **ASP.NET Core 8**
+- **Entity Framework Core 8 (In-Memory DB)**
+- **Domain-Driven Design (DDD)**
+- **Dependency Injection**
+- **Swagger for API Documentation**
+## 🛠️ Project Structure Details
+
+| Layer          | Description  |
+|---------------|-------------|
+| **Core**       | Defines domain entities (`Order`, `OrderItem`) and repository interface (`IOrderRepository`). |
+| **Application** | Contains DTOs and Use Cases (`CreateOrderUseCase`). |
+| **Infrastructure** | Implements **EF Core** (`AppDbContext`, `OrderRepository`). |
+| **API**         | Exposes RESTful endpoints (`OrderController`). |
